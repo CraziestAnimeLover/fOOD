@@ -1,0 +1,390 @@
+.card_style{
+    cursor: pointer;
+    transition: .3s;
+}
+  
+  .smalltrash{
+      display: none;
+  }
+  
+  
+  .card_style:hover{
+      box-shadow: 0 0 5px 2px rgba(185, 6, 6, 0.729);
+  }
+ 
+  .iteamsdetails{
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
+  }
+  .items_img{
+      flex: .4;
+  }
+  .items_img img{
+      width: 20rem;
+      border-radius: 5px;
+  }
+  
+  .details{
+      flex: .5;
+  };
+  
+  .rating{
+      background-color: green;
+  }
+  
+  @media (max-width:772px){
+      .iteamsdetails{
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+  }
+  
+  @media (max-width:450px){
+      .smalltrash{
+          display: block;
+      }
+      .largetrash{
+          display:none;
+      }
+      .emptycart_img{
+          margin-right: 50px;
+      }
+      .smallclose{
+          display: none;
+      }
+  
+      /* individual iteams details */
+     
+      .items_img img{
+          width: 16rem;
+      }
+      
+  }
+
+
+
+  /* register */
+ 
+ .registers{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 196, 150);
+    
+}
+  .containers{
+    width: 100%;
+    max-width: 500px;
+    background: url('https://images.pexels.com/photos/16627028/pexels-photo-16627028/free-photo-of-a-cup-of-coffee-on-a-table-in-a-spring-garden-coffee-with-a-milk-jug-and-a-branch-of-a-flowering-tree-spring-mood-spring-still-life-composition.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    padding: 28px;
+    opacity: 0.9;
+    background-size: cover;
+    margin-left: ;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+   
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color:black;
+    text-shadow: 2px 2px 2px rgb(215, 140, 140);
+    border-bottom: solid 1px black;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: rgb(1, 0, 0);
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px rgb(215, 140, 194);
+    margin: 5px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.gender-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: white;
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+   padding: 5px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(63, 114, 76, 0.7);
+}
+
+.form-submit-btn input:hover{
+    background: rgba(56, 204, 93, 0.7);
+    color: rgb(255, 255, 255);
+}
+.spantag span{
+    text-color: rgb(26, 14, 150);
+}
+.spantag label{
+    text-color:black;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+/* payment by button  */
+/* .container{
+    width: 350px;
+    height: 400px;
+    background: #dc6969;
+    padding: 30px;
+    position: relative;
+    border: #dc6969;
+    box-shadow: 2px solid red;
+}
+h6{
+    font-size: 20px;
+    color: var(--text-color);
+}
+span{
+    position: absolute;
+    right: 34px;
+    top: 28px;
+    font-size: 18px;
+    color: var(--text-color);
+}
+h1{
+    padding: 30px 0px;
+    font-size: 40px;
+    color: var(--text-color);
+}
+form label{
+    color: var(--text-color);
+    text-transform: uppercase;
+    position: relative;
+    font-size: 10px;
+    word-spacing: 4px;
+}
+form select{
+    width: 100%;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    text-transform: capitalize;
+    padding-top: 3px;
+    color: var(--text-color);
+    padding-bottom: 3px;
+    font-size: 18px;
+    margin-left: -3px;
+    margin-bottom: 20px;
+    background-color:transparent;
+
+}
+form #cardno{
+    width: 100%;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding-top: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    color: var(--text-color);
+    font-size: 18px;
+    background-color:transparent;
+}
+form label img{
+    position: absolute;
+    left: 264px;
+    top:17px;
+    width: 20px;
+    height: 20px;
+}
+.float{
+    display: flex;
+}
+#validtill, #cvv{
+    border: none;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    outline: none;
+    width: 130px;
+    padding-top: 14px;
+    margin-bottom: 56px;
+    color: var(--text-color);
+    background-color:transparent;
+    font-size: 18px;
+}
+p{
+    margin-left: 25px;
+    margin-bottom: 56px;
+    margin-top: -20px;
+    font-size: 16px;
+    text-transform: none;
+}
+button{
+    border: none;
+    outline: none;
+    background: rgb(233, 220, 220);
+    color: rgb(31, 30, 30);
+    width: 100%;
+    height:40px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+} */
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+} 
+ 
+
+/* Payment */
+
+.containerswithcontainer{
+	background: white;
+	max-width: 800px;
+	min-height: 500px;
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-start;
+	padding: 0.5rem 1.5rem;
+}
+.left{
+	flex-basis: 50%;
+}
+.right{
+	flex-basis: 50%;
+}
+form{
+	padding: 1rem;
+}
+
+h3{
+	margin-top: 1rem;
+	color:#2c3e50;
+	}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+
+#zip{
+	display: flex;
+	margin-top: 0.5rem;
+}
+#zip select{
+	padding: 0.5rem 0.7rem;
+}
+#zip input[type="number"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;	
+}
+input[type="submit"]{
+	width: 100%;
+	padding: 0.7rem 1.5rem;
+	background: #34495e;
+	color: white;
+	border: none;
+	outline: none;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background: #2c3e50;
+}
+
+
+@media only screen and (max-width: 770px){
+	.container{
+		flex-direction: column;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}
+

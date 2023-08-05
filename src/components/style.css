@@ -1,0 +1,41 @@
+.App_name{
+    color: rgb(227, 171, 119);
+    font-size: large;
+    font-weight: 700;
+    
+  
+}
+
+.App_name:hover{
+    color: rgb(237, 213, 105);
+}
+.menu_bar{
+   color: white;
+   font-weight: 500;
+}
+.menu_bar:hover{
+    color: rgb(189, 189, 220);
+}
+.search_bar{
+    margin-left: 120px;
+}
+
+.Buy_btn{
+    display: flex;
+    margin-left: 8px;
+    width: 82px;
+    padding-bottom: 1px;
+    align-items: center;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: medium;
+    font-weight: 500;
+    background-color: rgb(217, 1, 1);
+    border-color: rgb(147, 147, 236);
+    box-shadow: 1px solid rgb(148, 243, 15);
+    cursor: pointer;
+    text-decoration: none;
+}
+.Buy_btn:hover{
+    box-shadow: 0 0 5px 2px rgba(185, 6, 6, 0.729);
+}
